@@ -20,7 +20,7 @@ public class Demo1 {
 public void Initialise() throws InterruptedException {
 	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	ChromeOptions ChromeOptions = new ChromeOptions();
-    ChromeOptions.addArguments("--headless", "--no-sandbox");
+    //ChromeOptions.addArguments("--headless", "--no-sandbox");
 	Driver = new ChromeDriver(ChromeOptions);
 	Driver.get("http://10.120.101.74:8088/ROI_UI/index.html#/wizard");
 	Thread.sleep(7000);
@@ -62,7 +62,7 @@ public void test() throws InterruptedException {
 	
 	Driver.findElement(By.xpath(".//div[1]/div[2]/div/div/div/div[1]/label/span")).click();
 	Thread.sleep(2000);
-	Driver.findElement(By.xpath(".//*[@id='smscheck']")).sendKeys("70");
+	Driver.findElement(By.xpath(".//*[@id='sms']")).sendKeys("70");
 	Driver.findElement(By.xpath(".//*[@id='exes']")).sendKeys("700");
 	Driver.findElement(By.xpath(".//*[@id='eobs']")).sendKeys("3");
 	
