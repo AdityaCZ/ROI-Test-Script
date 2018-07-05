@@ -78,5 +78,6 @@ public void test() throws InterruptedException {
 	public void close()
 	{
 		Driver.close();
+		Driver.quit();
 	}
 }
