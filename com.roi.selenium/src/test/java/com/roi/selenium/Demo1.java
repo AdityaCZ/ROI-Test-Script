@@ -77,7 +77,7 @@ public void test() throws InterruptedException {
 @AfterMethod
 	public void close()
 	{
-		Driver.close();
+		//Driver.close();
 		Driver.quit();
 	}
 }
