@@ -20,7 +20,7 @@ public class Demo1 {
 public void Initialise() throws InterruptedException {
 	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	ChromeOptions ChromeOptions = new ChromeOptions();
-    //ChromeOptions.addArguments("--headless", "--no-sandbox");
+    ChromeOptions.addArguments("--headless", "--no-sandbox");
 	Driver = new ChromeDriver(ChromeOptions);
 	Driver.get("http://10.120.101.74:8088/ROI_UI/index.html#/wizard");
 	Thread.sleep(7000);
