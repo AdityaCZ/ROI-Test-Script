@@ -17,7 +17,7 @@ public class Demo1 {
 	
 @BeforeMethod
 public void Initialise() throws InterruptedException {
-	System.setProperty("webdriver.chrome.driver","C:\\Users\\Aditya.Kumar\\Desktop\\Schema Gain Calculator\\com.roi.selenium\\Resources\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 	Driver = new ChromeDriver();
 	Driver.get("http://10.120.101.74:8088/ROI_UI/index.html#/wizard");
 	Thread.sleep(7000);
@@ -61,7 +61,7 @@ public void test() throws InterruptedException {
 	Thread.sleep(2000);
 	Driver.findElement(By.xpath(".//*[@id='sms']")).sendKeys("70");
 	Driver.findElement(By.xpath(".//*[@id='exes']")).sendKeys("700");
-	Driver.findElement(By.xpath(".//*[@id='eobspooja']")).sendKeys("3");
+	Driver.findElement(By.xpath(".//*[@id='eobs']")).sendKeys("3");
 	
 	Thread.sleep(2000);
 	
